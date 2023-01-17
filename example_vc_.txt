@@ -1,2 +1,2 @@
-https://github.com
+https://github.com/path-to-release-url/exe_name.exe
 1.0.0
