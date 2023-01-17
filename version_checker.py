@@ -2,7 +2,7 @@ import requests
 import ctypes
 
 def check_for_updates():
-    version_url = 'https://raw.githubusercontent.com/Stuntlover-TM/versions/main/example_vc_.txt' # This URL should stay the same in all versions of the program
+    version_url = 'https://raw.githubusercontent.com/Stuntlover-TM/versions/main/example_vc.txt' # This URL should stay the same in all versions of the program
     newest_release_url = requests.get(version_url).text.split("\n") # Splits the URL for each newline, newest_release_url[0] being the download URL and newest_release_url[1] being the version
     current_release_url = "https://github.com/Stuntlover-TM/versions/releases/download/example-v1.0.0/version-checker.exe" # The "example-v1.0.0" would change if you made a new release
 
