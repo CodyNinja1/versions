@@ -6,8 +6,9 @@ def check_for_updates():
     newest_release_url = requests.get(version_url).text.split("\n") # Splits the URL for each newline, newest_release_url[0] being the download URL and newest_release_url[1] being the version
     current_release_url = "https://github.com/Stuntlover-TM/versions/releases/download/example-v1.1.0/version-checker.exe" # The "example-v1.1.0" would change if you made a new release
     file_name = f"Program Name v{newest_release_url[1]}.exe"
+    update_bool = None
 
-    if newest_release_url != current_release_url:
+    if newest_release_url[0] != current_release_url:
         update_bool = ctypes.windll.user32.MessageBoxW(0, f"New update available ({newest_release_url[1]})! Would you like to install the newest version?", "New update available!", 1) # Show a message box asking if the user wants to update
         # update_bool is 1 if Yes is pressed and 2 if Cancel is pressed
     
