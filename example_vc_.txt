@@ -1,2 +1,2 @@
-https://github.com/path-to-release-url/exe_name.exe
-1.0.0
+https://github.com/Stuntlover-TM/versions/releases/download/example-v1.1.0/version-checker.exe
+1.1.0
